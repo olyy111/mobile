@@ -73,6 +73,7 @@
 					var nowPoint = ev.changedTouches[0].pageY;
 					var dis = nowPoint - startPoint;
 					elTranslateY = startEl + dis;
+					//限制滑动范围				
 					if(elTranslateY>0){
 						elTranslateY = 0;
 					}
